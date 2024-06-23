@@ -1,0 +1,20 @@
+{% extends 'documentos/base.html' %}
+{% block conteudo %}
+<div class="container">
+    <h1>Documentos digitalizados:</h1>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Nome do documento</th>
+            <th>Data última modificação</th>
+        </tr>
+        {% for documento in documentos %}
+        <tr>
+            <td>{{documento.id_documento}}</td>
+            <td>{{documento.nome_documento}}</td>
+            <td>{{documento.data_modificacao}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
