@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Documento
 
 def home(request):
@@ -18,3 +18,14 @@ def documentos(request):
     }
     # Retornar os dados para a página de listagem de documentos
     return render(request, 'documentos/documentos.html', documentos)
+
+def editar(request, id):
+    documento = Documento.objects.get(id_documento=id)
+    return render(request, 'documentos/update.html', {"documento": documento})
+
+def update(request, id):
+    novo_nome = request.POST.get('nome')
+    documento = Documento.objects.get(id_documento=id)
+    documento.nome_documento = novo_nome
+    documento.save()
+    return redirect(documentos)

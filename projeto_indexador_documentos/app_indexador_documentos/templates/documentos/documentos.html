@@ -13,6 +13,7 @@
             <td>{{documento.id_documento}}</td>
             <td>{{documento.nome_documento}}</td>
             <td>{{documento.data_modificacao}}</td>
+            <td><a href="{% url 'editar' documento.id_documento %}">Editar</a></td>
         </tr>
         {% endfor %}
     </table>

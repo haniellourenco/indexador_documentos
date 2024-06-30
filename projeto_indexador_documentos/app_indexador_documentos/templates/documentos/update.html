@@ -1,0 +1,15 @@
+{% extends 'documentos/base.html' %}
+{% block conteudo %}
+<div class="container">
+    <form action="{% url 'update' documento.id_documento %}" method="post">
+        {% csrf_token %}
+        <div style="text-align: center;" class="container">
+            <h1>Editar documento com id {{documento.id_documento}}</h1>
+            Nome do documento <input name="nome" class="form-control-sm" type="text"
+                value="{{documento.nome_documento}}">
+            <button class="form-control-sm">Salvar</button>
+        </div>
+    </form>
+
+</div>
+{% endblock %}
