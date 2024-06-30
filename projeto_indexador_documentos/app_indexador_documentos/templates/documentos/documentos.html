@@ -14,8 +14,8 @@
             <td>{{documento.nome_documento}}</td>
             <td>{{documento.data_modificacao}}</td>
             <td>
-                <a href="{% url 'editar' documento.id_documento %}">Editar</a>
-                <a href="{% url 'delete' documento.id_documento %}">Excluir</a>
+                <a class="btn btn-primary" href="{% url 'editar' documento.id_documento %}">Editar</a>
+                <a class="btn btn-danger" href="{% url 'delete' documento.id_documento %}">Excluir</a>
             </td>
         </tr>
         {% endfor %}
