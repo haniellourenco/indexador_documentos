@@ -7,4 +7,5 @@ urlpatterns = [
     path('documentos/', views.documentos, name='listagem_documentos'),
     path('editar/<int:id>', views.editar, name='editar'),
     path('update/<int:id>', views.update, name='update'),
+    path('delete/<int:id>', views.delete, name='delete'),
 ]

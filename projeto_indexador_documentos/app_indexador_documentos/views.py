@@ -29,3 +29,8 @@ def update(request, id):
     documento.nome_documento = novo_nome
     documento.save()
     return redirect(documentos)
+
+def delete(request, id):
+    documento = Documento.objects.get(id_documento=id)
+    documento.delete()
+    return redirect(documentos)
