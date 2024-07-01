@@ -7,12 +7,15 @@
             <th>ID</th>
             <th>Nome do documento</th>
             <th>Data última modificação</th>
+            <th>Arquivo</th>
+            <th>Ações</th>
         </tr>
         {% for documento in documentos %}
         <tr>
-            <td>{{documento.id_documento}}</td>
-            <td>{{documento.nome_documento}}</td>
-            <td>{{documento.data_modificacao}}</td>
+            <td>{{ documento.id_documento }}</td>
+            <td>{{ documento.nome_documento }}</td>
+            <td>{{ documento.data_modificacao }}</td>
+            <td><a href="{{ documento.arquivo.url }}" class="btn btn-light" target="_blank">Ver Arquivo</a></td>
             <td>
                 <a class="btn btn-primary" href="{% url 'editar' documento.id_documento %}">Editar</a>
                 <a class="btn btn-danger" href="{% url 'delete' documento.id_documento %}">Excluir</a>
