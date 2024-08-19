@@ -1,0 +1,22 @@
+DEBUG 2024-08-18 23:05:14,952 views 24484 2372 Detalhes de debug da view
+INFO 2024-08-18 23:05:14,952 views 24484 2372 Informação importante da view
+INFO 2024-08-18 23:21:38,467 views 9884 10480 Acessando a página inicial
+INFO 2024-08-18 23:21:39,244 views 9884 10480 Acessando a listagem de documentos
+DEBUG 2024-08-18 23:21:39,246 views 9884 10480 Recuperados 6 documentos
+INFO 2024-08-18 23:21:49,317 views 9884 10480 Acessando edição do documento ID: 14
+INFO 2024-08-18 23:22:05,818 views 9884 10480 Acessando edição do documento ID: 14
+DEBUG 2024-08-18 23:22:05,820 views 9884 10480 Formulário de edição submetido
+INFO 2024-08-18 23:22:05,827 views 9884 10480 Documento ID: 14 atualizado com sucesso
+INFO 2024-08-18 23:22:05,831 views 9884 10480 Acessando a listagem de documentos
+DEBUG 2024-08-18 23:22:05,833 views 9884 10480 Recuperados 6 documentos
+INFO 2024-08-18 23:23:59,696 views 22736 21780 Acessando edição do documento ID: 14
+INFO 2024-08-18 23:24:10,261 views 22736 21780 Acessando edição do documento ID: 14
+DEBUG 2024-08-18 23:24:10,262 views 22736 21780 Formulário de edição submetido
+WARNING 2024-08-18 23:24:10,262 models 22736 21780 Tentativa de upload de arquivo com extensão inválida: .xml
+WARNING 2024-08-18 23:24:10,263 views 22736 21780 Formulário inválido na edição do documento ID: 14
+INFO 2024-08-18 23:24:26,413 views 14228 9528 Acessando a listagem de documentos
+DEBUG 2024-08-18 23:24:26,415 views 14228 9528 Recuperados 6 documentos
+INFO 2024-08-18 23:24:28,120 views 14228 9528 Acessando edição do documento ID: 19
+INFO 2024-08-18 23:24:30,927 views 14228 9528 Acessando edição do documento ID: 19
+DEBUG 2024-08-18 23:24:30,929 views 14228 9528 Formulário de edição submetido
+WARNING 2024-08-18 23:24:30,929 views 14228 9528 Formulário inválido na edição do documento ID: 19
